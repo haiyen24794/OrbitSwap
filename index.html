@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>OrbitSwap</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header class="header">
+
+  <div class="logo">
+    ORBITSWAP
+  </div>
+
+  <nav>
+
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#swap">Swap</a>
+    <a href="#roadmap">Roadmap</a>
+
+  </nav>
+
+  <button
+    id="connectWallet"
+    class="wallet-btn"
+  >
+    Connect Wallet
+  </button>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-left">
+
+    <span class="badge">
+      OPN NATIVE DEX
+    </span>
+
+    <h1>
+      The Future of
+      Trading on OPN
+    </h1>
+
+    <p>
+      OrbitSwap is a decentralized exchange
+      optimized for the OPN ecosystem,
+      providing instant swaps, deep liquidity,
+      and next-generation DeFi infrastructure.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button class="primary-btn">
+        Launch App
+      </button>
+
+      <button class="secondary-btn">
+        Read Docs
+      </button>
+
+    </div>
+
+    <div class="stats">
+
+      <div class="stat-card">
+        <h2>$720M+</h2>
+        <p>Total Volume</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>0.03%</h2>
+        <p>Swap Fee</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>350K+</h2>
+        <p>Active Users</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="hero-right">
+
+    <div class="swap-box">
+
+      <h3>Swap Tokens</h3>
+
+      <div class="swap-input">
+
+        <label>From</label>
+
+        <input
+          id="amount"
+          type="number"
+          placeholder="0.0"
+        />
+
+        <select>
+          <option>OPN</option>
+          <option>ORB</option>
+          <option>USDC</option>
+        </select>
+
+      </div>
+
+      <div class="swap-arrow">
+        ↓
+      </div>
+
+      <div class="swap-input">
+
+        <label>To</label>
+
+        <input
+          type="number"
+          placeholder="0.0"
+        />
+
+        <select>
+          <option>ORB</option>
+          <option>OPN</option>
+          <option>USDC</option>
+        </select>
+
+      </div>
+
+      <button
+        id="approveBtn"
+        class="swap-btn"
+      >
+        Approve
+      </button>
+
+      <button
+        id="swapBtn"
+        class="swap-btn"
+      >
+        Swap
+      </button>
+
+      <p id="status"></p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section
+  id="about"
+  class="section"
+>
+
+  <h2>Why OrbitSwap?</h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>Ultra-fast Swaps</h3>
+
+      <p>
+        Optimized swap engine built
+        specifically for OPN Network.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Deep Liquidity</h3>
+
+      <p>
+        Access sustainable liquidity pools
+        with advanced AMM infrastructure.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Low Gas Fees</h3>
+
+      <p>
+        Trade efficiently with extremely
+        low fees powered by OPN.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section
+  id="roadmap"
+  class="section"
+>
+
+  <h2>Roadmap</h2>
+
+  <div class="roadmap">
+
+    <div class="roadmap-card">
+
+      <h3>Q1 2026</h3>
+
+      <p>
+        Smart Contracts
+        Website Launch
+        Testnet Deployment
+      </p>
+
+    </div>
+
+    <div class="roadmap-card">
+
+      <h3>Q2 2026</h3>
+
+      <p>
+        Mainnet Launch
+        Liquidity Pools
+        Farming System
+      </p>
+
+    </div>
+
+    <div class="roadmap-card">
+
+      <h3>Q3 2026</h3>
+
+      <p>
+        DAO Governance
+        Cross-chain Swaps
+        Analytics Platform
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <p>
+    © 2026 OrbitSwap
+  </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.1/dist/ethers.umd.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
